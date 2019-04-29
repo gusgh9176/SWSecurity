@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/back4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:id="@id/theadersm" android:background="@drawable/back1" android:paddingLeft="5.0sp" android:paddingTop="3.0sp" android:paddingBottom="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="arXiv.org" />
+    <ListView android:id="@id/listsm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:cacheColorHint="#ff3b3838" />
+</LinearLayout>
