@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/back4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:id="@id/theaderlis" android:background="@drawable/back1" android:paddingLeft="5.0sp" android:paddingTop="3.0sp" android:paddingBottom="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" arXiv.org" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/txt" android:paddingTop="2.0sp" android:paddingBottom="1.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:cacheColorHint="#ff3b3838" android:layout_weight="0.5" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/back1" android:paddingTop="2.0sp" android:paddingBottom="1.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageView android:id="@id/previousbutton" android:paddingRight="2.0sp" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/prev" android:onClick="previousPressed"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <ImageView android:id="@id/nextbutton" android:paddingRight="2.0sp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next" android:text="@string/next" android:onClick="nextPressed"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

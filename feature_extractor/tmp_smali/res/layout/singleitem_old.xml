@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:id="@id/theader" android:background="@drawable/back1" android:paddingTop="3.0sp" android:paddingBottom="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" arXiv.org" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:id="@id/txt" android:padding="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+            <TextView android:textSize="12.0sp" android:id="@id/txt3" android:padding="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="0.7" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ProgressBar android:textStyle="bold" android:id="@id/pbar" android:paddingLeft="4.0sp" android:paddingTop="4.0sp" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="36.0sp" android:max="100" android:progress="0" android:indeterminate="false" android:indeterminateOnly="false" android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal" android:progressDrawable="@android:drawable/progress_horizontal" android:minHeight="36.0sp" android:layout_weight="0.3" />
+        <Button android:id="@id/pdfbutton" android:padding="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/view_pdf" android:layout_weight="0.7" android:onClick="pressedPDFButton"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</LinearLayout>

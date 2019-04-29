@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTheme" parent="@android:style/Theme.Holo">
+        <item name="android:tabWidgetStyle">@style/CustomTabWidget</item>
+    </style>
+    <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTextTabWidget</item>
+    </style>
+    <style name="CustomTextTabWidget" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/tabcolor</item>
+    </style>
+</resources>

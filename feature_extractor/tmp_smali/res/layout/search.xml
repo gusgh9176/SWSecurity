@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/back4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:id="@id/theaderse" android:background="@drawable/back1" android:paddingLeft="5.0sp" android:paddingTop="3.0sp" android:paddingBottom="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/txt" android:paddingLeft="5.0sp" android:paddingTop="4.0sp" android:paddingBottom="1.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_fields" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="3.0sp" android:paddingBottom="2.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <Spinner android:id="@id/spinner1" android:paddingBottom="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+            <EditText android:gravity="center_vertical" android:id="@id/field1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="3.0sp" android:paddingBottom="2.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <Spinner android:id="@id/spinner2" android:paddingBottom="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+            <EditText android:gravity="center_vertical" android:id="@id/field2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="3.0sp" android:paddingBottom="2.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <Spinner android:id="@id/spinner3" android:paddingBottom="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+            <EditText android:gravity="center_vertical" android:id="@id/field3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/tsearchdate" android:paddingLeft="8.0sp" android:paddingTop="11.0sp" android:paddingRight="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_from" />
+            <Button android:id="@id/datebtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/today" android:onClick="pressedDateButton"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <Button android:id="@id/seachbutton" android:padding="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search" android:onClick="pressedSearchButton"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/sourcelistentries" android:title="New Article Source" android:key="sourcelist" android:summary="The 'arXiv API' option is recommended. The RSS source does not support the widget and only shows the most recent days articles." android:dialogTitle="Choose a source for browsing new articles." android:entryValues="@array/sourcelistvalues" />
+</PreferenceScreen>
