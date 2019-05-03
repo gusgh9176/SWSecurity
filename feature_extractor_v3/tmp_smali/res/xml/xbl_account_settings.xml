@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_settings">
+        <PreferenceScreen android:title="@string/login_settings" android:key="login" android:summary="@string/set_account_credentials" />
+        <ListPreference android:entries="@array/account_settings_check_frequency_entries" android:title="@string/update_frequency" android:key="account_check_frequency" android:dialogTitle="@string/update_frequency" android:entryValues="@array/account_settings_check_frequency_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/view_settings">
+        <ListPreference android:entries="@array/coverflow_entries" android:title="@string/settings_coverflow" android:key="account_coverflow_mode" android:dialogTitle="@string/settings_coverflow" android:entryValues="@array/coverflow_entry_values" />
+        <CheckBoxPreference android:title="@string/show_apps" android:key="account_show_apps" android:summary="@string/show_apps_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_settings">
+        <CheckBoxPreference android:title="@string/message_notifications" android:key="account_message_notifications" android:summary="@string/message_notifications_summary" />
+        <ListPreference android:entries="@array/friend_notification_entries" android:title="@string/friend_notifications" android:key="account_friend_notifications" android:dialogTitle="@string/friend_notifications" android:entryValues="@array/friend_notification_values" />
+        <ListPreference android:entries="@array/friend_notification_entries" android:title="@string/beacon_notifications" android:key="account_beacon_notifications" android:dialogTitle="@string/beacon_notifications" android:entryValues="@array/friend_notification_values" />
+        <RingtonePreference android:title="@string/select_ringtone" android:key="account_ringtone" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+        <CheckBoxPreference android:title="@string/vibrate" android:key="account_vibrate" android:summary="@string/vibrate_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

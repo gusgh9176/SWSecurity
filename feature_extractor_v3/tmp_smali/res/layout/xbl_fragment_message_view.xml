@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.largeMessage" android:gravity="center" android:id="@id/message" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/select_message_to_view" />
+    <RelativeLayout android:id="@id/message_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/button_section" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/message_view_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_minWidth" android:text="@string/reply" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_section" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/gamertag_row" android:background="@drawable/stylized_button" android:padding="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/avatar_icon" android:focusable="true" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/avatar_default" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.profileGamertag" android:ellipsize="end" android:id="@id/message_view_sender" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textAppearance="@style/TextAppearance.statusbarText" android:id="@id/message_view_sent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:background="@color/background_body" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+                <LinearLayout android:background="@drawable/xbox_circles_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="@style/TextAppearance.messageBody" android:id="@id/message_view_body" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

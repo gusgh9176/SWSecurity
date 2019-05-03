@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/trophy_icon" android:background="@color/icon_background" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/trophy_title_section" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/trophy_icon" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/trophy_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.title" android:ellipsize="marquee" android:id="@id/trophy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.secondary" android:id="@id/trophy_earned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/trophy_title_section" android:layout_alignBottom="@id/trophy_icon" />
+    <TextView android:id="@id/trophy_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/trophy_earned" android:layout_alignLeft="@id/trophy_title_section" style="@style/TextAppearance.achDescription" />
+</RelativeLayout>

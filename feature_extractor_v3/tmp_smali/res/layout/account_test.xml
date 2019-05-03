@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="100.0sp" />
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.cafLargeMessage" android:gravity="center_horizontal" android:id="@id/account_setup_test_message" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/connecting" />
+        <ProgressBar android:id="@id/account_setup_test_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@drawable/stock_bottom_bar" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <Button android:id="@id/account_setup_test_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_minWidth" android:text="@string/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:enabled="false" android:id="@id/account_setup_test_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_minWidth" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

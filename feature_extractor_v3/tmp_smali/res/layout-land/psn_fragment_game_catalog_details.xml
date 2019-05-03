@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/psn_catalog_detail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/catalog_details" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Gallery android:id="@id/catalog_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" />
+        <WebView android:id="@id/game_description" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/catalog_gallery" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/TextAppearance.largeMessage" android:gravity="center" android:id="@id/unselected" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/select_a_game" />
+</FrameLayout>

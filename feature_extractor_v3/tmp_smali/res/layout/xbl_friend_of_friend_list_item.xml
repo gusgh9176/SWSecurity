@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.akop.bach.uiwidget.XboxLiveFriendListItem android:orientation="vertical" android:id="@id/friend_container" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" style="@style/xboxListViewActivatedStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/friend_avatar_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    <TextView android:textAppearance="@style/TextAppearance.title" android:ellipsize="end" android:id="@id/friend_gamertag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_toRightOf="@id/friend_avatar_icon" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_alignParentRight="true">
+        <TextView android:textAppearance="@style/TextAppearance.xboxGtext" android:id="@id/friend_gp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/xbox_g_small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/friend_avatar_icon" android:layout_alignBottom="@id/friend_avatar_icon">
+        <ImageView android:id="@id/friend_title" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/xbox_game_empty_boxart" android:scaleType="centerCrop" />
+        <TextView android:textAppearance="@style/TextAppearance.listItemDescription" android:id="@id/friend_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+</com.akop.bach.uiwidget.XboxLiveFriendListItem>
