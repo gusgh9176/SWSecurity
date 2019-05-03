@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/TextAppearance.cafLargeMessage" android:gravity="center" android:id="@id/accounts_none" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_accounts" />
-    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</merge>

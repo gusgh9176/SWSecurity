@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:id="@id/menu_group_gold">
-        <item android:icon="@drawable/ic_menu_compose" android:id="@id/menu_compose" android:title="@string/compose_message" android:showAsAction="always" />
-        <item android:icon="@drawable/ic_menu_sentmail" android:id="@id/menu_sent_mail" android:title="@string/sent_messages" android:showAsAction="ifRoom" />
-    </group>
-    <item android:icon="@drawable/ic_menu_refresh" android:id="@id/menu_refresh" android:title="@string/refresh" android:showAsAction="ifRoom" />
-</menu>

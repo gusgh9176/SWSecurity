@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:minWidth="159.0dip" android:minHeight="159.0dip" android:updatePeriodMillis="1800000" android:initialLayout="@layout/xbl_2x2_gamercard_widget" android:configure="com.akop.bach.activity.xboxlive.Configure2x2GamercardWidget"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

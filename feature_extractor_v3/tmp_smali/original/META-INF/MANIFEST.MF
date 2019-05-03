@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_131 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA1-Digest: E/Pqb7xxFqpC67sghaiEtTocHqs=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: aC0uEYaP56alC3cd5elezy+Iw9I=
+
+Name: res/layout/main.xml
+SHA1-Digest: 1EoYUgZa/7iecfxziOGOciiDyjs=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: KeuWBCBb1U/XZfwNynpoY/iVk78=
+
+Name: META-INF/buildserverid
+SHA1-Digest: HwjmBj8AFria1iNwNFN9GzAEvRk=
+
+Name: assets/readmes.zip
+SHA1-Digest: U0jBvW/IAv71rctX9Tt+otv2NHY=
+
+Name: assets/modes.zip
+SHA1-Digest: oKUibq2hwp6rmNbsaWYRIXJvRGA=
+
+Name: assets/profiles2.zip
+SHA1-Digest: 8N6uOrTISsNBTuaqIA1qw1m1c44=
+
+Name: assets/segments4.zip
+SHA1-Digest: mpKCUsM7iP6RwUJnIwrY+te5RaU=
+
+Name: META-INF/fdroidserverid
+SHA1-Digest: HwjmBj8AFria1iNwNFN9GzAEvRk=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: /yAptGLdU27RMou9UakczF72NxE=
+
+Name: resources.arsc
+SHA1-Digest: XTg0+Zot+B0pDLj71ESkNR1h9kI=
+
+Name: assets/world.png
+SHA1-Digest: jnyNgQIU56U1NYwO462wBiu7Pjo=
+
+Name: classes.dex
+SHA1-Digest: 77DC3cPZreIa/04zUB5DHGslpNc=
+
