@@ -44,7 +44,7 @@ class DetectionManager(object):
 		self.Permission_final = set(self.Permission)
 		for pm in self.Permission_final:
 			f.write(str(pm)+',')
-#		f.write(str(self.APICheck)+',')
+		f.write(str(self.APICheck)+',')
 #		f.write(str(self.DetectionResult)+',')
 		f.close()
 
