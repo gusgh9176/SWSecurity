@@ -44,9 +44,11 @@ def checkPackageName(manifest):
 
 def getSmali(dvm, vma, fname):
 		global nativeResult
+		global permission_list
 		reload(sys)
 		sys.setdefaultencoding('utf-8')
 		smali_path_list = []
+		permission_list = []
 		dirname = './tmp_smali'
 #   	print(fname)
 		if os.path.isdir(dirname):
