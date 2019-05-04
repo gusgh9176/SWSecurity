@@ -13,7 +13,7 @@ import json
 import subprocess, os
 import re
 import operator
-import shutil #추가한코드
+import shutil
 
 # return True -> malware
 # return False -> benign
