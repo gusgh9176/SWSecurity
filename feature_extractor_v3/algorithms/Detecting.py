@@ -20,7 +20,7 @@ malware_Permission = ['CHANGE_NETWORK_STATE', 'UNINSTALL_SHORTCUT', 'WRITE_APN_S
 def classify(Permission_final):
     for Pm in Permission_final:
         for mal_pm in malware_Permission:
-            a = str(Pm).fine(mal_pm)
+            a = str(Pm).find(mal_pm)
             if(a != -1):
                 print("This is Malware!!!!!!!!!!!!!!1")
                 return True
