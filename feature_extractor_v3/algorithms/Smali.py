@@ -79,7 +79,6 @@ def getSmali(dvm, vma, fname):
 
 						if not line:
 							break
-					permission_list = []
 
 		print(permission_list)
 
