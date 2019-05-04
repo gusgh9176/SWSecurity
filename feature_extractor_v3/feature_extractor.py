@@ -22,11 +22,6 @@ import os
 import time
 
 class DetectionManager(object):
-	args = 0
-	filename = ""
-	DetectionResult = 0
-	Permission = []
-	APICheck = []
 	def __init__(self,args,fname,dvm,vma,temp_d):
 		self.args = args
 		self.filename = fname

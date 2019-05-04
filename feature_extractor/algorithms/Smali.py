@@ -22,7 +22,8 @@ package_name = ''
 permission_list = []
 
 def checkPermission(manifest):
-	global permission_list
+#	global permission_list
+	permission_list
 	permission = []
 	for _line in manifest.split("=\""):
 		if "\"/>" in _line:
