@@ -28,6 +28,7 @@ class DetectionManager(object):
 		self.DetectionResult = 0
 		self.Permission = []
 		self.APICheck = []
+		permission_list = []
 
 		if args.All:
 			args.Smali = True
