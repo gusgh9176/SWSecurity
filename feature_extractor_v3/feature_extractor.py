@@ -18,6 +18,7 @@ import androguard
 import androguard.misc
 from algorithms.Smali import getSmali
 from algorithms.APICheck import getAPICheck
+from algorithms.Detecting import classify
 import os
 import time
 
@@ -28,6 +29,7 @@ class DetectionManager(object):
 		self.DetectionResult = 0
 		self.Permission = []
 		self.APICheck = []
+		self.malwareNames = [] #추가한코드
 
 		if args.All:
 			args.Smali = True
@@ -42,6 +44,8 @@ class DetectionManager(object):
 		f = open(rname,'ab')
 		f.write(str(self.filename)+',')
 		self.Permission_final = set(self.Permission)
+		classify(self.Permission_final) # 추가한코드
+		
 		for pm in self.Permission_final:
 			f.write(str(pm)+',')
 		f.write(str(self.APICheck)+',')
