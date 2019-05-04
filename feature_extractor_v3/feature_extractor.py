@@ -22,6 +22,7 @@ from algorithms.Detecting import classify
 import os
 import time
 
+
 class DetectionManager(object):
 	def __init__(self,args,fname,dvm,vma,temp_d):
 		self.args = args
@@ -44,7 +45,7 @@ class DetectionManager(object):
 		f = open(rname,'ab')
 		f.write(str(self.filename)+',')
 		self.Permission_final = set(self.Permission)
-		classify(self.Permission_final) # 추가한코드
+		classify(self.Permission_final, self.filename) # 추가한코드
 		
 		for pm in self.Permission_final:
 			f.write(str(pm)+',')
