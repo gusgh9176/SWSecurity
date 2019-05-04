@@ -24,7 +24,7 @@ def classify(Permission_final, filename):
             a = str(Pm).find(mal_pm)
             if(a != -1):
                 print("This is Malware!!!!!!!!!!!!!!1")
-				shutil.copy(filename, 'classify/malware')
+                shutil.copy(filename, 'classify/malware')
                 return True
     print("This is benign~~~~~~~~~~~~~~~")
 	shutil.copy(filename, 'classify/benign')
