@@ -57,7 +57,6 @@ def getSmali(dvm, vma, fname):
 			for f in files:
 				mani_path = []
 				mani_path = os.path.join(root, f)
-				permission_list = []
 #				print(mani_path)
 				if mani_path == './tmp_smali/AndroidManifest.xml':
 					smfd = open(mani_path, "rt")
@@ -80,6 +79,7 @@ def getSmali(dvm, vma, fname):
 
 						if not line:
 							break
+					permission_list = []
 
 		print(permission_list)
 
