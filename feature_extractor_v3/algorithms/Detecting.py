@@ -27,7 +27,7 @@ def classify(Permission_final, filename):
                 shutil.copy(filename, 'classify/malware')
                 return True
     print("This is benign~~~~~~~~~~~~~~~")
-	shutil.copy(filename, 'classify/benign')
+    shutil.copy(filename, 'classify/benign')
     return False
 
 
