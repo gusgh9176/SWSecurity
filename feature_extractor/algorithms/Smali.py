@@ -22,8 +22,7 @@ package_name = ''
 permission_list = []
 
 def checkPermission(manifest):
-#	global permission_list
-	permission_list
+	global permission_list
 	permission = []
 	for _line in manifest.split("=\""):
 		if "\"/>" in _line:
@@ -79,7 +78,7 @@ def getSmali(dvm, vma, fname):
 
 						if not line:
 							break
-
+		print("HERE here\n")
 		print(permission_list)
 
 		return permission_list
