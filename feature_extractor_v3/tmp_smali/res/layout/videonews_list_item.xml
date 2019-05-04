@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffd4d4d4" android:layout_width="fill_parent" android:layout_height="70.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_videonews" android:background="@drawable/load_video" android:layout_width="60.0px" android:layout_height="60.0px" android:layout_marginLeft="5.0px" android:layout_marginTop="2.0px" android:layout_marginRight="10.0px" android:layout_marginBottom="2.0px" android:src="@drawable/load_video" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:layout_marginRight="10.0px">
+        <TextView android:textSize="13.0px" android:textStyle="bold" android:textColor="#ff336699" android:id="@id/tv_bigtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="8.0px" android:textColor="#ffc9c9c9" android:layout_gravity="right" android:id="@id/tv_pubtime" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0px" android:textColor="#ff8f8f8f" android:id="@id/tv_newsdesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>
