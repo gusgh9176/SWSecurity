@@ -22,9 +22,7 @@ package_name = ''
 permission_list = []
 
 def checkPermission(manifest):
-#	global permission_list
 	global permission_list
-	permission_list = []
 	global permission_final
 	permission = []
 	for _line in manifest.split("=\""):
@@ -59,6 +57,7 @@ def getSmali(dvm, vma, fname):
 			for f in files:
 				mani_path = []
 				mani_path = os.path.join(root, f)
+				permission_list = []
 #				print(mani_path)
 				if mani_path == './tmp_smali/AndroidManifest.xml':
 					smfd = open(mani_path, "rt")
