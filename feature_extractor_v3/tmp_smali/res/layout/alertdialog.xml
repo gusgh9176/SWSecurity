@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textSize="16.0px" android:textColor="#ff999999" android:gravity="center" android:id="@id/et_phone" android:layout_width="200.0px" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="2.0dip">
+            <requestFocus />
+        </EditText>
+        <Button android:id="@id/bt_phoneBook" android:background="@drawable/search_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:padding="6.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/bt_sendMessage" android:layout_width="100.0px" android:layout_height="wrap_content" android:text="发短信" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/bt_cancel" android:layout_width="100.0px" android:layout_height="wrap_content" android:text="取消" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
